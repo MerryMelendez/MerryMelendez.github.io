@@ -1,0 +1,21 @@
+.parrafo{
+    border: 3px solid rgb(151, 107, 107);
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    color: darksalmon;
+    font-size: large;
+    font-weight: 500;
+}
+
+div{
+    background-color: rgb(234, 255, 203);
+    border: 2px solid rgb(176, 207, 61);
+    text-align: center;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span ul li{
+    color: rgb(197, 136, 253);
+}
