@@ -19,3 +19,16 @@ div{
 span ul li{
     color: rgb(197, 136, 253);
 }
+
+#boton {
+    background-color: darkgray;
+    border: none;
+    font-size: 30px;
+    width: 500px;
+    padding: 20px;
+    color: antiquewhite;
+}
+
+.link {
+    color: rgb(56, 125, 143);
+}
