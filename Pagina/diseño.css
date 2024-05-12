@@ -1,0 +1,52 @@
+.titulo{
+    color: rgb(18, 19, 5);
+    text-align: center;
+    background-color: #fffffb;
+    font-style: inherit;
+    
+}
+
+.ima1{
+    width: 200px;
+    margin-left: 150px;
+}
+
+.ima2{
+    width: 265px;
+    margin-left: 10px;
+}
+
+.ima3{
+    width: 250px;
+    margin-left: 10px;
+}
+
+.ima4{
+    width: 250px;
+}
+
+.botondebuscar{
+    color: black;
+    border-color:  black ;
+    border-radius: 10px;
+    margin-right: 60px;
+    background-color: #fffffb;
+}
+
+.buscador{
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.registrate{
+    border-radius: 10px;
+    background-color: #fffffb;
+}
+
+.navbar{
+    background-color: #fffffb;
+}
+
+.navbartexto{
+    color: black;
+}
