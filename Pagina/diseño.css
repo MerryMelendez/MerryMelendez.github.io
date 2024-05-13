@@ -50,3 +50,24 @@
 .navbartexto{
     color: black;
 }
+
+.aliniacion{
+    display: flex;
+}
+
+.v{
+    margin-left: 230px;
+    color: black;
+}
+.c{
+    margin-left: 190px;
+    color: black;
+}
+.ca{
+    margin-left: 190px;
+    color: black;
+}
+.ps{
+    margin-left: 160px;
+    color: black;
+}
