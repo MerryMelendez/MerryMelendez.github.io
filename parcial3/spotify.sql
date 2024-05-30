@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-05-2024 a las 03:03:07
+-- Tiempo de generación: 30-05-2024 a las 04:39:08
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -84,6 +84,20 @@ CREATE TABLE `genero` (
   `nombre` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+--
+-- Volcado de datos para la tabla `genero`
+--
+
+INSERT INTO `genero` (`id`, `nombre`) VALUES
+(1, 'Kpop'),
+(2, 'Rock'),
+(3, 'Baladas'),
+(4, 'Pop'),
+(5, 'Jazz'),
+(6, 'Rap'),
+(7, 'Reggaetón'),
+(8, 'Corridos');
+
 -- --------------------------------------------------------
 
 --
@@ -95,6 +109,15 @@ CREATE TABLE `membresia` (
   `descripcion` varchar(100) NOT NULL,
   `precio` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Volcado de datos para la tabla `membresia`
+--
+
+INSERT INTO `membresia` (`id`, `descripcion`, `precio`) VALUES
+(1, 'Plan Familiar\r\nPagaruna cantidad para que mas de 5 personas compartan la cuenta y escuchen sus canci', 499),
+(2, 'Premium\r\nPodras descargar canciones y no sufriras de anuncios', 299),
+(3, 'Plan de Pareja\r\nComparte playlist con tu pareja, descarga y los ultimos hits que han escuchado ambos', 350);
 
 -- --------------------------------------------------------
 
@@ -237,13 +260,13 @@ ALTER TABLE `favoritos`
 -- AUTO_INCREMENT de la tabla `genero`
 --
 ALTER TABLE `genero`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `membresia`
 --
 ALTER TABLE `membresia`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `playlist`
