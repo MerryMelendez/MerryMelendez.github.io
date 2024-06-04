@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-05-2024 a las 04:39:08
+-- Tiempo de generación: 04-06-2024 a las 03:48:14
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -32,6 +32,22 @@ CREATE TABLE `artista` (
   `nombre` varchar(100) NOT NULL,
   `descripcion` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Volcado de datos para la tabla `artista`
+--
+
+INSERT INTO `artista` (`id`, `nombre`, `descripcion`) VALUES
+(1, 'Stray Kids', 'Su genero es Kpop\r\n'),
+(2, 'Queen', 'El genero que tocan es rock'),
+(3, 'Natalia Jiménez', 'Toca y canta baladas'),
+(4, 'Natalia Lafourcade', 'El genero que suele cantar son las baladas'),
+(5, 'Amy Winehouse', 'Jazz fue el genero que canto Amy antes de irse'),
+(6, 'Lady Gaga\r\n', 'Canta pop mas que nada'),
+(7, 'Michael Jackson\r\n', 'El rey del pop'),
+(8, 'Eminem', 'Uno de los mejores raperos y con muy buenas canciones con cosas que han pasado '),
+(9, 'Karol G\r\n', 'Genero principal que canta es el Reguetón'),
+(10, 'Peso pluma', 'El genero que sus canciones estan hechas son Corridos ');
 
 -- --------------------------------------------------------
 
@@ -96,7 +112,7 @@ INSERT INTO `genero` (`id`, `nombre`) VALUES
 (5, 'Jazz'),
 (6, 'Rap'),
 (7, 'Reggaetón'),
-(8, 'Corridos');
+(8, 'Corridos tumbados');
 
 -- --------------------------------------------------------
 
@@ -115,7 +131,7 @@ CREATE TABLE `membresia` (
 --
 
 INSERT INTO `membresia` (`id`, `descripcion`, `precio`) VALUES
-(1, 'Plan Familiar\r\nPagaruna cantidad para que mas de 5 personas compartan la cuenta y escuchen sus canci', 499),
+(1, 'Plan Familiar\r\nPagar una cantidad para que mas de 5 personas compartan la cuenta y escuchen sus canc', 499),
 (2, 'Premium\r\nPodras descargar canciones y no sufriras de anuncios', 299),
 (3, 'Plan de Pareja\r\nComparte playlist con tu pareja, descarga y los ultimos hits que han escuchado ambos', 350);
 
@@ -236,7 +252,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `artista`
 --
 ALTER TABLE `artista`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `artista_canciones`
