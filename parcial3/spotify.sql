@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-06-2024 a las 03:48:14
+-- Tiempo de generación: 05-06-2024 a las 02:53:24
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -76,6 +76,20 @@ CREATE TABLE `canciones` (
   `activo` tinyint(1) NOT NULL,
   `foto` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Volcado de datos para la tabla `canciones`
+--
+
+INSERT INTO `canciones` (`id`, `nombre`, `genero_id`, `duracion`, `fecha`, `activo`, `foto`) VALUES
+(1, 'DOMINO', 1, '00:03:19', '2021-08-23', 1, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXSfXxySXd7s&psig=AOv'),
+(2, 'TOPLINE', 1, '00:03:31', '2023-06-02', 1, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Db3GYcA7j5mg&psig=AOv'),
+(3, 'CASE 143', 1, '00:03:31', '2023-10-14', 1, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjYSlpC6Ud2A&psig=AOv'),
+(4, 'Back Door', 1, '00:03:38', '2020-10-18', 1, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DX-uJtV8ScYk&psig=AOv'),
+(5, 'GET LIT', 1, '00:41:46', '2023-06-18', 1, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DT8WVJWiJduM&psig=AOv'),
+(6, 'Hall of Fame', 1, '00:02:52', '2023-06-16', 1, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fgenius.com%2FGenius-traducciones-al-espanol-stray-'),
+(7, 'DOODLE (Changbin)', 1, '00:03:04', '2022-12-21', 1, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFLoAVCCrp_E&psig=AOv'),
+(8, 'FAM (Korean Ver.)', 1, '00:03:42', '2022-12-21', 1, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DD8WwqWS2E6E&psig=AOv');
 
 -- --------------------------------------------------------
 
@@ -177,6 +191,21 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `membresia_id`) VALUES
+(2, 'Alan', 'Michis@gmail.com', 2),
+(3, 'Emmanuel', 'Mango@gmail.com', 3),
+(4, 'Mariangel', 'Merry@gmail.com', 3),
+(5, 'Daniela', 'Koyco@gmail.com', 2),
+(6, 'Omar', 'maro@gmail.com', 1),
+(7, 'Nancy', 'nawn@gmail.com', 2),
+(8, 'Amanda', 'manDA@cetis107.edu.mx', 1),
+(9, 'carlos', 'hermanodeEmmanuel@gmail.com', 1),
+(10, 'Gabriel', 'gaby@gmail.com', 2);
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -264,7 +293,7 @@ ALTER TABLE `artista_canciones`
 -- AUTO_INCREMENT de la tabla `canciones`
 --
 ALTER TABLE `canciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `favoritos`
@@ -300,7 +329,7 @@ ALTER TABLE `playlist_canciones`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Restricciones para tablas volcadas
