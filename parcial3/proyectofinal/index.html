@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final Parcial #3</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="si.css">
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
-    Meléndez Gurrola Mariangel
+    <div class="container">
+        Melendez Gurrola Mariangel <br><br>
+        <div class="row">
+            <div class="col">
+                <h3 style="color: crimson;"> SELECT * FROM alumno</h3>
+                <p>Cosulta 1: Obtener el listado de todos los alumnos de la falcultad</p>
+                <img src="imagenes/alumno.PNG" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <h4 style="color: crimson;">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso=asignatura.curso</h4>
+                <p>Consulta 2: Obtener el listado de curso(nombre) y las asignaturas que tiene</p>
+                <img src="imagenes/curso.PNG" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
