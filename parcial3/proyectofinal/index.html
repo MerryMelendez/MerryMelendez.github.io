@@ -31,14 +31,14 @@
                 <img src="imagenes/profe.PNG" alt="" class="img-fluid" >
             </div>
             <div class="col">
-                <h4 style="color: crimson; text-align: center;"> </h4>
+                <h4 style="color: crimson; text-align: center;">SELECT * FROM alumno INNER JOIN matricula WHERE matricula.idAsignatura LIKE 'AS009'</h4>
                 <p>Consulta 5: Obtener el listado de los alumnos (todos los campos) que están inscritos a la asignatura programación AS009</p>
-                <img src="imagenes/" alt="" class="img-fluid">
+                <img src="imagenes/pro.png" alt="" class="img-fluid">
             </div>
             <div class="col">
-                <h4 style="color: crimson;"></h4>
+                <h4 style="color: crimson;"> SELECT profesor.nombre, profesor.apellido1, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor=impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura=asignatura.idAsignatura</h4>
                 <p>Consulta 6: Obtener el listado de profesores y asignaturas que comparten </p>
-                <img src="imagenes/" alt="" class="img-fluid">
+                <img src="imagenes/al.png" alt="" class="img-fluid">
             </div>
             <div class="col">
                 <h4 style="color: crimson;"></h4>
