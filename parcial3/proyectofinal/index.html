@@ -55,9 +55,9 @@
                 <p>Consulta 9: Obtener el listado de curos, con asignatura y el maestro que las imparte</p>
                 <img src="imagenes/" alt="" class="img-fluid">
             </div> <div class="col">
-                <h4 style="color: crimson;"></h4>
+                <h4 style="color: crimson;">SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo FROM alumno INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno INNER JOIN asignatura on matricula.idAsignatura=asignatura.idAsignatura INNER JOIN impartir ON impartir.idAsignatura=asignatura.idAsignatura INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor INNER JOIN curso on curso.idCurso=asignatura.curso</h4>
                 <p>Consulta 10: . Obtener el listado de alumnos con asignaturas que cursa, profesor que le imparte y curso al que pertenece</p>
-                <img src="imagenes/" alt="" class="img-fluid">
+                <img src="imagenes/10.PNG" class="img-fluid">
             </div>
         </div>
     </div>
