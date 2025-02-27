@@ -1,10 +1,16 @@
-En este apartado de subira el proyecto
-se planea hacer una pagina web de compra y venta
+			--Pagina web--
 
-Miembros:
-Lugo SanchezEstrella 
-Meléndez Gurrola Mariangel
-Mendoza Moreno Amanda
-Milla Sanchez Nancy Paola
-Zazueta Díaz Chelssy
+	Miembros:				Rol
+Lugo SanchezEstrella          |		Analista
+Meléndez Gurrola Mariangel    |		Lider
+Mendoza Moreno Amanda         |		Programadora
+Milla Sanchez Nancy Paola     |		Analista/Programadora
+Zazueta Díaz Chelssy          |		Programadora
 
+Lluvia de Ideas
+ - Compra/Renta de productos
+ - Venta de libros
+ - Pasteleria
+ - Vender tareas
+
+Por medio de votos, se escogio "Compra/Renta de productos". 
